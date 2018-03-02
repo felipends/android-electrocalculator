@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.felipe.rescalculator.MainActivity"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ResCalc!"
+            android:textSize="30sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backbonito"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="12dp">
+
+        <EditText
+            android:id="@+id/resVal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="12dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Adicionar Resistor"
+            android:inputType="numberDecimal"/>
+        <Button
+            android:id="@+id/addResBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="add"
+            android:background="@drawable/buttonaddstyle"
+            android:textColor="#FFF"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backbonito"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="12dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Resistência em Série:"
+            android:textSize="22sp"/>
+        <TextView
+            android:id="@+id/resEqs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0 ohms"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backbonito"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="12dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Resistência em Paralelo:"
+            android:textSize="22sp"/>
+        <TextView
+            android:id="@+id/resEqp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0 ohms"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resEquiBt"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular "
+        android:background="@drawable/buttonaddstyle"
+        android:textColor="#FFF"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="20sp"/>
+
+</android.support.v7.widget.LinearLayoutCompat>
