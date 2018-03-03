@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -20,6 +21,7 @@
             android:textSize="30sp"
             />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,16 +40,37 @@
             android:layout_height="wrap_content"
             android:text="Adicionar Resistor"
             android:inputType="numberDecimal"/>
-        <Button
-            android:id="@+id/addResBt"
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="add"
-            android:background="@drawable/buttonaddstyle"
-            android:textColor="#FFF"
-            android:layout_marginHorizontal="10dp"
-            android:textSize="20sp"/>
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/clearBt"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="clear"
+                android:background="@drawable/buttonaddstyle"
+                android:textColor="#FFF"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/addResBt"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="add"
+                android:background="@drawable/buttonaddstyle"
+                android:textColor="#FFF"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -65,14 +88,15 @@
             android:layout_height="wrap_content"
             android:text="Resistência em Série:"
             android:textSize="22sp"/>
+
         <TextView
             android:id="@+id/resEqs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0.0 ohms"
             android:textSize="20sp"/>
-
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -90,13 +114,13 @@
             android:layout_height="wrap_content"
             android:text="Resistência em Paralelo:"
             android:textSize="22sp"/>
+
         <TextView
             android:id="@+id/resEqp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0.0 ohms"
             android:textSize="20sp"/>
-
     </LinearLayout>
 
     <Button
@@ -109,5 +133,4 @@
         android:textColor="#FFF"
         android:layout_marginHorizontal="10dp"
         android:textSize="20sp"/>
-
 </android.support.v7.widget.LinearLayoutCompat>
