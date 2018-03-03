@@ -2,6 +2,8 @@ package com.example.felipe.rescalculator
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import java.text.DecimalFormat
 
@@ -21,9 +23,14 @@ class MainActivity : AppCompatActivity() {
         addResBt.setOnClickListener {
             val newRes = resVal.text.toString()
             val res = newRes.toDouble()
-            resList.add(res)
-            resVal.text.clear()
-            println(resList)
+
+            if(resVal.text.isEmpty()){
+                Toast.makeText(this, "Adicione algum resistor.", Toast.LENGTH_SHORT).show()
+            }else{
+                resList.add(res)
+                resVal.text.clear()
+                println(resList)
+            }
         }
 
         clearBt.setOnClickListener {
