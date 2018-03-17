@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity() {
         clearBt.setOnClickListener {
             resList.clear()
             resVal.text.clear()
-            resEqs.text = "0.0oms"
-            resEqp.text = "0.0oms"
+            resEqs.text = "0.00 ohms"
+            resEqp.text = "0.00 ohms"
             println(resList)
         }
 
